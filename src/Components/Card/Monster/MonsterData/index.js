@@ -45,28 +45,28 @@ const model_can_special_summon = (self, environment) => {
 }
 
 export const monster_database = {
-    // E.hero sparkman
-    20721928: () => {
+    
+    1: () => {
         let options = {
-            key: 20721928,
+            key: 1,
             atk: 1600,
             def: 1400,
-            name: 'Elemental HERO Sparkman',
+            name: 'Raccoon',
             level: 4,
             attribute: ATTRIBUTE.LIGHT,
             race: 'Warrior',
-            description: 'An Elemental HERO and a warrior of light who proficiently wields many kinds of armaments. His Static Shockwave cuts off the path of villainy.',
+            description: 'abc',
             can_normal_summon: model_can_normal_summon,
             can_special_summon: model_can_special_summon
         }
         return initialize_monster_card[card_meta[options.key].card_type](options);
     },
-    58932615: () => {
+    3: () => {
         let options = {
-            key: 58932615,
+            key: 3,
             atk: 1200,
             def: 800,
-            name: 'Elemental HERO Burstinatrix',
+            name: 'Fox',
             level: 3,
             attribute: ATTRIBUTE.FIRE,
             race: 'Warrior',
@@ -76,27 +76,27 @@ export const monster_database = {
         }
         return initialize_monster_card[card_meta[options.key].card_type](options);
     },
-    84327329: () => {
+    2: () => {
         let options = {
-            key: 84327329,
+            key: 2,
             atk: 800,
             def: 2000,
-            name: 'Elemental HERO Clayman',
+            name: 'Deer',
             level: 4,
             attribute: ATTRIBUTE.EARTH,
             race: 'Warrior',
-            description: 'An Elemental HERO with a clay body built-to-last. He\'ll preserve his Elemental HERO colleagues at any cost.',
+            description: 'An cost.',
             can_normal_summon: model_can_normal_summon,
             can_special_summon: model_can_special_summon
         }
         return initialize_monster_card[card_meta[options.key].card_type](options);
     },
-    21844576: () => {
+    4: () => {
         let options = {
-            key: 21844576,
+            key: 4,
             atk: 1000,
             def: 1000,
-            name: 'Elemental HERO Avian',
+            name: 'Bird',
             level: 3,
             attribute: ATTRIBUTE.WIND,
             race: 'Warrior',
@@ -106,34 +106,19 @@ export const monster_database = {
         }
         return initialize_monster_card[card_meta[options.key].card_type](options);
     },
-    89943723: () => {
+    5: () => {
         let options = {
-            key: 89943723,
-            atk: 2500,
-            def: 2000,
-            name: 'Elemental HERO Neos',
-            level: 7,
-            attribute: ATTRIBUTE.LIGHT,
-            race: 'Warrior',
-            description: 'A new Elemental HERO has arrived from Neo-Space! When he initiates a Contact Fusion with a Neo-Spacian his unknown powers are unleashed.',
-            can_normal_summon: model_can_normal_summon,
-            can_special_summon: model_can_special_summon
-        }
-        return initialize_monster_card[card_meta[options.key].card_type](options);
-    },
-    35809262: () => {
-        let options = {
-            key: 35809262,
+            key: 5,
             atk: 2100,
             def: 1200,
-            name: 'Elemental HERO Flame Wingman',
-            level: 6,
+            name: 'Bear',
+            level: 2,
             attribute: ATTRIBUTE.WIND,
             race: 'Warrior',
-            description: '\"Elemental HERO Avian\" + \"Elemental HERO Burstinatrix\"\nMust be Fusion Summoned and cannot be Special Summoned by other ways. When this card destroys a monster by battle and sends it to the Graveyard: Inflict damage to your opponent equal to the ATK of the destroyed monster in the Graveyard.',
+            description: 'abc',
             can_normal_summon: model_can_normal_summon,
             can_special_summon: model_can_special_summon,
-            fusion_materials: [21844576, 58932615]
+            fusion_materials: [1, 2]
         }
         return initialize_monster_card[card_meta[options.key].card_type](options);
     }

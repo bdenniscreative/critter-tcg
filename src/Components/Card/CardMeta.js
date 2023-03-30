@@ -1,25 +1,19 @@
 import { CARD_TYPE, ATTRIBUTE } from './utils/constant';
 
 export const card_meta = {
-    20721928: {
+    1: {
         card_type: CARD_TYPE.MONSTER.NORMAL
     },
-    21844576: {
+    2: {
         card_type: CARD_TYPE.MONSTER.NORMAL
     },
-    58932615: {
+    3: {
         card_type: CARD_TYPE.MONSTER.NORMAL
     },
-    84327329: {
+    4: {
         card_type: CARD_TYPE.MONSTER.NORMAL
     },
-    89943723: {
+    5: {
         card_type: CARD_TYPE.MONSTER.NORMAL
-    },
-    24094653: {
-        card_type: CARD_TYPE.SPELL.NORMAL
-    },
-    35809262: {
-        card_type: CARD_TYPE.MONSTER.FUSION
     }
 }

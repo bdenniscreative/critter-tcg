@@ -31,8 +31,8 @@
 .side_box_MINE {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(7, 7vw);
-    grid-template-rows: repeat(2, 10.15vw);
+    grid-template-columns: repeat(3, 7vw);
+    grid-template-rows: repeat(1, 10.15vw);
     column-gap: 3.5vw;
     row-gap: 0.7vw;
 } 
@@ -40,8 +40,8 @@
 .side_box_OPPONENT {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(7, 7vw);
-    grid-template-rows: repeat(2, 10.15vw);
+    grid-template-columns: repeat(3, 7vw);
+    grid-template-rows: repeat(1, 10.15vw);
     column-gap: 3.5vw;
     row-gap: 0.7vw;
     transform: rotate(180deg);

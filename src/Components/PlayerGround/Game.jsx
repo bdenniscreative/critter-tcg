@@ -108,7 +108,7 @@ class Game extends React.Component {
 
             [SIDE.MINE]: {
                 [ENVIRONMENT.HAND]: 
-                   loaded_card_env[mine_index].slice(0, 5),
+                   loaded_card_env[mine_index].slice(0, 3),
                 [ENVIRONMENT.MONSTER_FIELD]:
                     make_placeholders(),
                 [ENVIRONMENT.SPELL_FIELD]:
@@ -116,14 +116,14 @@ class Game extends React.Component {
                 [ENVIRONMENT.GRAVEYARD]:
                     [],
                 [ENVIRONMENT.DECK]:
-                    loaded_card_env[mine_index].slice(5),
+                    loaded_card_env[mine_index].slice(3),
                 [ENVIRONMENT.EXTRA_DECK]:
                     load_extra_card_env[mine_index].slice(0, 3),
-                hp: 8000,
+                hp: 3,
             },
             [SIDE.OPPONENT]: {
                 [ENVIRONMENT.HAND]: 
-                    loaded_card_env[opponent_index].slice(0, 5),
+                    loaded_card_env[opponent_index].slice(0, 3),
                 [ENVIRONMENT.MONSTER_FIELD]:
                     make_placeholders(),
                 [ENVIRONMENT.SPELL_FIELD]:
@@ -131,10 +131,10 @@ class Game extends React.Component {
                 [ENVIRONMENT.GRAVEYARD]:
                     [],
                 [ENVIRONMENT.DECK]:
-                    loaded_card_env[opponent_index].slice(5),
+                    loaded_card_env[opponent_index].slice(3),
                 [ENVIRONMENT.EXTRA_DECK]:
                     load_extra_card_env[opponent_index].slice(3),
-                hp: 8000
+                hp: 3
             },
             monsters: {},
             spells: {},

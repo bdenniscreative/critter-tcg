@@ -33,12 +33,12 @@ class Main extends React.Component {
             // let heros = [24094653, 24094653, 24094653, 24094653, 24094653, 20721928, 21844576, 58932615, 84327329, 89943723, 20721928, 21844576, 58932615, 84327329, 89943723, 20721928, 21844576, 58932615, 84327329, 89943723]
             
             // for fusion tests
-            let heros = [24094653, 24094653, 24094653, 58932615, 58932615, 58932615, 21844576, 21844576, 21844576]
+            let heros = [1, 2, 3, 4, 5]
             
             heros = shuffle(heros)
             this.my_deck = {
                 deck: heros,
-                extra_deck: [35809262, 35809262, 35809262]
+                extra_deck: [1, 2, 3]
             }
             exchange_deck_with_opponent(this.my_deck)
         }
@@ -77,17 +77,17 @@ class Main extends React.Component {
                         <Sky
                             images={{
                                 /* FORMAT AS FOLLOWS */
-                                0: yugi_sky,  /* You can pass as many images as you want */
-                                1: jaden_sky,
-                                2: yusei_sky, /* you can pass images in any form: link, imported via webpack... */
-                                3: neos_sky
+                                0: yugi_sky  /* You can pass as many images as you want */
+                                //1: jaden_sky,
+                                //2: yusei_sky, /* you can pass images in any form: link, imported via webpack... */
+                                //3: neos_sky
                                 /* 4: your other image... */
                                 /* 5: your other image... */
                                 /* ... */
                             }}
-                            how={30} /* Pass the number of images Sky will render chosing randomly */
+                            how={0} /* Pass the number of images Sky will render chosing randomly */
                             time={20} /* time of animation */
-                            size={'200px'} /* size of the rendered images */
+                            size={'0px'} /* size of the rendered images */
                             background={'#f2f2f2'} /* color of background */
                         />
                     </div>

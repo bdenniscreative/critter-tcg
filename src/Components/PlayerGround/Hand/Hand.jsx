@@ -137,7 +137,7 @@ class Hand extends React.Component {
                         )
                     } else {
                         //traps
-                        return <p>fuck</p>
+                        return <p></p>
                     }
     
                 }

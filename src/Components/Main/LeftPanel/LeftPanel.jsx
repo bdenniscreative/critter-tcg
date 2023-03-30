@@ -11,7 +11,7 @@ class LeftPanel extends React.Component {
 
     // 164 pixels wide by 242 pixels tall
     render() {
-        const card_url = this.props.left_panel_cardEnv ? 'https://ygoprodeck.com/pics/'+ this.props.left_panel_cardEnv.card.key +'.jpg' : 'https://ms.yugipedia.com//f/fd/Back-Anime-ZX-2.png'
+        const card_url = this.props.left_panel_cardEnv ? '' + this.props.left_panel_cardEnv.card.key +'.png' : 'https://ms.yugipedia.com//f/fd/Back-Anime-ZX-2.png'
             return(
                 <div className="left_panel">
                     <div className="card_pic_container">
